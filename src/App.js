@@ -18,19 +18,22 @@ const App = () => {
     // === INTERSECTION OBSERVER REFERENCE ===
     // ref: the reference that is used to determine if the element is in view.
     // inView: the element which an animation will be applied to.
-    const { ref: titleRef, inView: title } = useInView( { threshold: 1, rootMargin: '-10% 0%' } );
+    const { ref: heroRef, inView: heroView } = useInView( { threshold: 1 } );
+    const { ref: titleRef, inView: titleView } = useInView( { threshold: 1, rootMargin: '-10% 0%' } );
 
     return (
         // This is an example of how I would use the "Heading1" component.
         // Note: the animation would trigger if the reference is in view with intersection observer.
-        <section>
-            <Heading1
-                text="Creekside Night Market"
-                color="yellow"
-                animation={ title ? "move-in" : "move-out" }
-                reference={ titleRef }
-            />
-        </section>
+        <main>
+            <section className={ `hero ${ heroView ? "fade-in" : "fade-out" }` } ref={ heroRef }>
+                <Heading1
+                    text="Creekside Night Market"
+                    color="yellow"
+                    animation={ titleView ? "slide-in" : "slide-out" }
+                    reference={ titleRef }
+                />
+            </section>
+        </main>
     )
 }
 
