@@ -1,0 +1,55 @@
+.yellow {
+  color: #febc12;
+}
+
+.black {
+  color: #000000;
+}
+
+.grey {
+  color: #151313;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.transparent {
+  color: rgba(0, 0, 0, 0);
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.link {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.button {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}/*# sourceMappingURL=master.css.map */
