@@ -30,6 +30,10 @@
   animation: slide-out 0.5s ease-in-out forwards;
 }
 
+.hello {
+  color: red;
+}
+
 .yellow {
   color: #febc12;
 }
@@ -51,37 +55,37 @@
 }
 
 h1 {
-  font-family: sans-serif;
+  font-family: "Roboto";
   font-size: 48px;
   font-weight: 700;
 }
 
 h2 {
-  font-family: sans-serif;
+  font-family: "Roboto";
   font-size: 32px;
   font-weight: 700;
 }
 
 h3 {
-  font-family: sans-serif;
+  font-family: "Roboto";
   font-size: 24px;
   font-weight: 700;
 }
 
 p {
-  font-family: sans-serif;
+  font-family: "Roboto";
   font-size: 16px;
   font-weight: 400;
 }
 
 .link {
-  font-family: sans-serif;
+  font-family: "Roboto";
   font-size: 16px;
   font-weight: 400;
 }
 
 .button {
-  font-family: sans-serif;
+  font-family: "Roboto";
   font-size: 16px;
   font-weight: 400;
 }/*# sourceMappingURL=master.css.map */
