@@ -1,0 +1,37 @@
+nav {
+    position: fixed;
+    @include flex-wrap( wrap, row, center, center );
+    @extend %margin-desktop;
+    @extend %bot-radius;
+    background: rgba(26, 26, 26, 0.60);
+    backdrop-filter: blur(8px);
+    height: 80px;
+    width: calc(100vw - 160px);
+    z-index: 9;
+
+    .nav-left {
+        width: 176px;
+        display: grid;
+        place-items: center left;
+        .nav-logo {
+            height: 60px;
+        }
+    }
+    .nav-mid {
+        @include flex-wrap( wrap, row, center, center );
+        flex-grow: 1;
+        gap: $lg;
+        
+        .link {
+            color: white;
+
+            p {
+                font-size: $md;
+            }
+        }
+    }
+    .nav-right {
+        @include flex-wrap( wrap, row, center, center );
+        gap: $sm;
+    }
+}

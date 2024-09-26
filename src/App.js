@@ -13,6 +13,11 @@ import Button from "./assets/components/typography/Button";
 import Nav from "./assets/components/Nav";
 import Footer from "./assets/components/Footer";
 import GalleryImage from "./assets/components/GalleryImage";
+import Hero from './assets/components/Hero';
+
+// === IMAGES ===
+
+
 
 const App = () => {
     // === INTERSECTION OBSERVER REFERENCE ===
@@ -24,17 +29,13 @@ const App = () => {
     return (
         // This is an example of how I would use the "Heading1" component.
         // Note: the animation would trigger if the reference is in view with intersection observer.
-        <main>
-            <Nav/>
-            <section className={ `hero ${ heroView ? "fade-in" : "fade-out" }` } ref={ heroRef }>
-                <Heading1
-                    text="Creekside Night Market"
-                    color="yellow"
-                    animation={ titleView ? "slide-in" : "slide-out" }
-                    reference={ titleRef }
-                />
-            </section>
-        </main>
+        <>
+        <Nav/>
+            <main>
+                <Hero />
+            </main>
+        <Footer/>
+        </>
     )
 }
 

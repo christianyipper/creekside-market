@@ -1,0 +1,10 @@
+.social {
+    background-color: $yellow;
+    display: block;
+    height: $xl;
+    width: $xl;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+}
