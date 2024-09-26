@@ -1,38 +1,56 @@
 // === HEADINGS ===
-h1 {
+h1, h2, h3, p, .link, .button {
     font-family: 'Roboto';
+    color: white;
+}
+
+h1 {
     font-size: $xl;
     font-weight: 700;
 }
 
 h2 {
-    font-family: 'Roboto';
     font-size: $lg;
     font-weight: 700;
 }
 
 h3 {
-    font-family: 'Roboto';
     font-size: $md;
     font-weight: 700;
 }
 
 // === TEXT ===
 p {
-    font-family: 'Roboto';
     font-size: $sm;
     font-weight: 400;
 }
 
 .link {
-    font-family: 'Roboto';
     font-size: $sm;
     font-weight: 400;
+    text-decoration: none;
 }
 
 // === BUTTON ===
 .button {
-    font-family: 'Roboto';
     font-size: $sm;
     font-weight: 400;
+    padding: $sm $xxl;
+    border-radius: $sm;
+    background: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.button2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+// === STYLES ===
+.bold {
+    font-weight: bold;
 }

@@ -1,0 +1,26 @@
+footer {
+    @include flex-wrap( wrap, column, center, center );
+    @extend %margin-desktop;
+    background: $grey;
+    position: relative;
+    padding-top: calc($md + $md);
+    padding-bottom: $md;
+
+    hr {
+        width: 60px;
+    }
+
+    .footer-border {
+        @extend %bot-radius;
+        background: black;
+        position: absolute;
+        width: 100%;
+        height: $md;
+        top: 0;
+    }
+
+    section {
+        @include flex-wrap( wrap, row, center, center );
+        gap: 10px;
+    }
+}

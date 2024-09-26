@@ -1,6 +1,6 @@
-const Paragraph = ( { text, color, animation } ) => {
+const Paragraph = ( { text, color, animation, variant } ) => {
     return (
-        <p className={ `${ color, animation }` }>{ text }</p>
+        <p className={ `${ color, animation, variant }` }>{ text }</p>
     );
 };
 

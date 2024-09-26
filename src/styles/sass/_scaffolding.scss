@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    background: black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 12fr;
+    gap: $md;
+    padding: 0 80px;
+}
+
+%margin-desktop {
+    padding: 0 80px;
+}
+
+%bot-radius {
+    border-radius: 0px 0px 24px 24px;
+}
