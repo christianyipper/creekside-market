@@ -25,6 +25,7 @@ const App = () => {
         // This is an example of how I would use the "Heading1" component.
         // Note: the animation would trigger if the reference is in view with intersection observer.
         <main>
+            <Nav/>
             <section className={ `hero ${ heroView ? "fade-in" : "fade-out" }` } ref={ heroRef }>
                 <Heading1
                     text="Creekside Night Market"
