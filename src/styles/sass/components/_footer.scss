@@ -11,7 +11,7 @@ footer {
     }
 
     .footer-border {
-        @extend %bot-radius;
+        @include rounded-bot( desktop );
         background: black;
         position: absolute;
         width: 100%;

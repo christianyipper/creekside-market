@@ -1,0 +1,9 @@
+.about {
+    grid-column: 4 / span 9;
+    margin: 5vh 0;
+
+    > div {
+        padding-left: 36px;
+        border-left: 3px solid white;
+    }
+}

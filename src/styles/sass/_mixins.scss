@@ -1,8 +1,11 @@
+// === COLOR ===
 @mixin color( $text, $background, $border ) {
     color: $text;
     background-color: $background;
     border-color: $border;
 }
+
+// === FLEX ===
 @mixin flex( $grow, $shrink, $basis ) {
     display: flex;
     flex: $grow $shrink $basis;
@@ -13,4 +16,15 @@
     flex-direction: $direction;
     justify-content: $posX;
     align-items: $posY;
+}
+
+// === BORDER RADIUS ===
+@mixin rounded-bot( $breakpoint ) {
+    @if $breakpoint == mobile {
+        @media only screen and ( max-width: 500px ) {
+            border-radius: 0px 0px $sm $sm;
+        }
+    } @else if $breakpoint == desktop {
+        border-radius: 0px 0px $md $md;
+    }
 }

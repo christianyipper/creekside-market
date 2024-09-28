@@ -14,6 +14,7 @@ import Nav from "./assets/components/Nav";
 import Footer from "./assets/components/Footer";
 import GalleryImage from "./assets/components/GalleryImage";
 import Hero from './assets/components/Hero';
+import About from './assets/components/About';
 
 // === IMAGES ===
 
@@ -33,6 +34,7 @@ const App = () => {
         <Nav/>
             <main>
                 <Hero />
+                <About/>
             </main>
         <Footer/>
         </>

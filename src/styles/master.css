@@ -70,10 +70,6 @@ footer, nav {
   padding: 0 80px;
 }
 
-footer .footer-border, nav, .hero > img {
-  border-radius: 0px 0px 24px 24px;
-}
-
 h1, h2, h3, p, .link, .button {
   font-family: "Roboto";
   color: white;
@@ -127,38 +123,6 @@ p {
   font-weight: bold;
 }
 
-.hero {
-  width: 100vw;
-  margin: 0 -80px;
-  position: relative;
-}
-.hero > img {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-.hero > div {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: end center;
-}
-.hero > div > div {
-  place-self: end;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  height: auto;
-  gap: 24px;
-  margin-bottom: 24px;
-}
-
 nav {
   position: fixed;
   display: flex;
@@ -166,8 +130,10 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border-radius: 0px 0px 24px 24px;
   background: rgba(26, 26, 26, 0.6);
-  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   height: 80px;
   width: calc(100vw - 160px);
   z-index: 9;
@@ -219,6 +185,7 @@ footer hr {
   width: 60px;
 }
 footer .footer-border {
+  border-radius: 0px 0px 24px 24px;
   background: black;
   position: absolute;
   width: 100%;
@@ -243,4 +210,46 @@ footer section {
   border-radius: 100%;
   display: grid;
   place-items: center;
+}
+
+.hero {
+  grid-column: 1/span 12;
+  margin: 0 -80px;
+  position: relative;
+}
+.hero > img {
+  border-radius: 0px 0px 24px 24px;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.hero > div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: end center;
+}
+.hero > div > div {
+  place-self: end;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.about {
+  grid-column: 4/span 9;
+  margin: 5vh 0;
+}
+.about > div {
+  padding-left: 36px;
+  border-left: 3px solid white;
 }/*# sourceMappingURL=master.css.map */
