@@ -132,8 +132,7 @@ nav {
   align-items: center;
   border-radius: 0px 0px 24px 24px;
   background: rgba(26, 26, 26, 0.6);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   height: 80px;
   width: calc(100vw - 160px);
   z-index: 9;
@@ -214,6 +213,7 @@ footer section {
 
 .hero {
   grid-column: 1/span 12;
+  height: 95vh;
   margin: 0 -80px;
   position: relative;
 }
@@ -221,7 +221,9 @@ footer section {
   border-radius: 0px 0px 24px 24px;
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 .hero > div {
   position: absolute;
@@ -231,22 +233,29 @@ footer section {
   display: grid;
   place-items: end center;
 }
-.hero > div > div {
+.hero > div > img {
+  width: 50%;
+}
+.hero > div > .button-container {
   place-self: end;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: relative;
   width: 100%;
   height: auto;
   gap: 24px;
   margin-bottom: 24px;
 }
 
+@media screen and (max-width: 768px) {
+  .hero > div > img {
+    width: 75%;
+  }
+}
 .about {
-  grid-column: 4/span 9;
+  grid-column: 2/span 10;
   margin: 5vh 0;
 }
 .about > div {
