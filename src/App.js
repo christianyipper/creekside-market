@@ -12,15 +12,11 @@ import Button from "./assets/components/typography/Button";
 // === COMPONENTS ===
 import Nav from "./assets/components/Nav";
 import Footer from "./assets/components/Footer";
-import GalleryImage from "./assets/components/GalleryImage";
 import Hero from './assets/components/Hero';
 import About from './assets/components/About';
+import Gallery from './assets/components/Gallery'
 
-// === IMAGES ===
-
-
-
-const App = () => {
+const App = ( ) => {
     // === INTERSECTION OBSERVER REFERENCE ===
     // ref: the reference that is used to determine if the element is in view.
     // inView: the element which an animation will be applied to.
@@ -35,6 +31,7 @@ const App = () => {
             <main>
                 <Hero />
                 <About/>
+                <Gallery />
             </main>
         <Footer/>
         </>
