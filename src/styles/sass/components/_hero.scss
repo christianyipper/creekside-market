@@ -1,6 +1,6 @@
 .hero {
-    // width: 100%;
     grid-column: 1 / span 12;
+    height: 95vh;
     margin: 0 -80px;
     position: relative;
 
@@ -8,8 +8,9 @@
         @include rounded-bot( desktop );
         position: relative;
         width: 100%;
-        height: auto;
-        // aspect-ratio: 3 / 4;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
     }
 
     > div {
@@ -20,15 +21,31 @@
         display: grid;
         place-items: end center;
         
+        > img {
+            width: 50%;
+        }
 
-        > div {
+        > .button-container {
             place-self: end;
             @include flex-wrap( wrap, row, center, center );
-            position: relative;
             width: 100%;
             height: auto;
             gap: $md;
             margin-bottom: 24px;
         }
     }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .hero {
+        
+        > div {
+
+            > img {
+                width: 75%;
+            }
+        } 
+    }
+    
 }

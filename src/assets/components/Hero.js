@@ -8,7 +8,7 @@ const Hero = ( { } ) => {
             <img src={ Vancouver } />
             <div>
                 <img src={ YellowLogo } />
-                <div>
+                <div className="button-container">
                     <Button 
                         text="About Us"
                         link=""
