@@ -15,6 +15,7 @@ import Footer from "./assets/components/Footer";
 import Hero from './assets/components/Hero';
 import About from './assets/components/About';
 import Gallery from './assets/components/Gallery'
+import Leaflet from './assets/components/Leaflet';
 
 const App = ( ) => {
     // === INTERSECTION OBSERVER REFERENCE ===
@@ -32,6 +33,7 @@ const App = ( ) => {
                 <Hero />
                 <About/>
                 <Gallery />
+                <Leaflet />
             </main>
         <Footer/>
         </>
