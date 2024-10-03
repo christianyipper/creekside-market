@@ -356,12 +356,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	border-radius: 5px;
 	}
 .leaflet-control-layers-toggle {
-	background-image: url(../assets/icons/WhiteLogo.png);
+	// background-image: url(../assets/icons/WhiteLogo.png);
 	width: 36px;
 	height: 36px;
 	}
 .leaflet-retina .leaflet-control-layers-toggle {
-	background-image: url(../assets/icons/WhiteLogo.png);
+	// background-image: url(../assets/icons/WhiteLogo.png);
 	background-size: 26px 26px;
 	}
 .leaflet-touch .leaflet-control-layers-toggle {
@@ -404,7 +404,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 /* Default icon URLs */
 .leaflet-default-icon-path { /* used only in path-guessing heuristic, see L.Icon.Default */
-	background-image: url(../assets/icons/WhiteLogo.png);
+	// background-image: url(../assets/icons/WhiteLogo.png);
 	}
 
 
@@ -662,7 +662,27 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 // === CREEKSIDE STYLES ===
 
-.map-container {
-    grid-column: 1 / span 12;
-    aspect-ratio: 16 / 9
-;}
+.leaflet-section {
+	grid-column: 2 / span 10;
+	margin: 5vh 0;
+	@include flex-wrap( nowrap, column, center, baseline );
+	gap: 24px;
+	.map-container {
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		border-radius: 24px;
+		z-index: 1;
+	}
+	
+	.leaflet-text {
+		@include flex-wrap( nowrap, column, center, baseline );
+		border-radius: 24px;
+		h3,
+		a {
+			margin: 0;
+		}
+		h3 {
+			color: $yellow;
+		}
+	}
+}
