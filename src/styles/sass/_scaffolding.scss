@@ -5,7 +5,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 12fr;
+    grid-template-columns: repeat(12, 1fr);
     gap: $md;
     padding: 0 80px;
 }
